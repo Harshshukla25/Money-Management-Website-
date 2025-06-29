@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List with Due Date</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="todoList.css" />
+  </head>
+  <body>
+    <div class="homeBtn">
+      <a href="index1.html"><button id="home">Home</button></a>
+    </div>
+    <div class="app">
+      <div class="container">
+        <h1>My To Do List</h1>
+        <div id="wrapper">
+          <input type="text" placeholder="Task to be done..." id="task-input" />
+          <input type="date" id="due-date-input" />
+          <button id="add-btn">Add</button>
+        </div>
+        <p id="pending-tasks">
+          You have <span class="count-value">0</span> task(s) to complete.
+        </p>
+        <div id="tasks"></div>
+      </div>
+      <p id="error">Input cannot be empty!</p>
+    </div>
+
+    <script src="todoList.js"></script>
+  </body>
+</html>

@@ -1,0 +1,269 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.app {
+  font-family: "Poppins", sans-serif;
+  width: min(95vw, 700px);
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 30px;
+}
+#home {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 50px;
+  width: 110px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #f2a900;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+#home:hover {
+  background-color: #d18b00;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+.container {
+  padding: 20px 25px;
+  background-color: #f1f8fb;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 0.8em;
+}
+#wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+  margin-bottom: 1em;
+}
+
+#wrapper input[type="text"] {
+  flex: 3;
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  color: #111111;
+  font-size: 1em;
+  border: none;
+  border-bottom: 2px solid #d1d3d4;
+  padding: 0.5em 0.5em;
+}
+
+#wrapper input[type="date"] {
+  flex: 1;
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  color: #111111;
+  font-size: 1em;
+  border: none;
+  border-bottom: 2px solid #d1d3d4;
+  padding: 0.5em 0.5em;
+}
+
+#wrapper input:focus {
+  outline: none;
+  border-color: #5a95ff;
+}
+#wrapper button {
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.4em;
+  background-color: #2f559b;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  height: 50px;
+  padding: 0 1em;
+}
+#tasks {
+  margin-top: 0.7em;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 16px;
+  position: relative;
+}
+.task:not(:first-child) {
+  margin-top: 1em;
+}
+.task input[type="checkbox"] {
+  position: relative;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 2px solid #e1e1e1;
+}
+.task input[type="checkbox"]:before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.task input[type="checkbox"]:checked {
+  background-color: #4df15a;
+  border-color: #4df15a;
+}
+.task input[type="checkbox"]:checked:before {
+  position: absolute;
+  content: "\f00c";
+  color: #ffffff;
+  font-size: 0.9em;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.task {
+  background-color: #b675fb;
+  padding: 0.7em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5em;
+  box-shadow: 0 0.5em 1em #895bb96b;
+  cursor: pointer;
+}
+
+.task span {
+  flex: 3;
+  margin-left: 1em;
+  word-break: break-word;
+}
+
+.task button {
+  color: #ffffff;
+  width: 60px;
+  padding: 0.7em 0;
+  border-radius: 5px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-left: 6px;
+}
+
+.edit {
+  background-color: #2550a1;
+}
+
+.delete {
+  background-color: #d32525;
+}
+#pending-tasks span {
+  color: #5a95ff;
+}
+#pending-tasks {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 0.7em;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #1f1e1e;
+}
+#error {
+  text-align: center;
+  display: none;
+  background-color: #ffffff;
+  color: #d32525;
+  margin-top: 1.5em;
+  padding: 1em 0;
+  border-radius: 0.5em;
+  font-size: 20px;
+}
+
+.task-due-date {
+  font-size: 14px;
+  font-style: italic;
+  color: #232020;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  #wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #wrapper input[type="text"],
+  #wrapper input[type="date"],
+  #wrapper button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #home {
+    width: 90%;
+    left: 5%;
+    top: 5px;
+  }
+
+  .task {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .task button {
+    width: 100%;
+    padding: 0.7em;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 930px) {
+  h1 {
+    font-size: 2em;
+  }
+  #home {
+    width: 90%;
+    left: 5%;
+    top: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  #wrapper button {
+    font-size: 1.2em;
+  }
+
+  .task button {
+    font-size: 10px;
+  }
+}
+.container {
+  margin-top: 30px;
+}
+#home {
+  width: 100px;
+}

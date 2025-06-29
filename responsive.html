@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BANKRUPT BUDDY</title>
+    <link rel="stylesheet" href="responsiveCss.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+  </head>
+  <body id="home">
+    <div class="wholecont">
+    <div class="scroll-up-btn">
+      <i class="bx bx-up-arrow-alt bx-sm"></i>
+    </div>
+    <div class="showcase">
+      <div class="navbar-top">
+        <ul class="left">
+          <li><a href="#">Financial Help Anytime</a></li>
+          <li>
+            <a href="#"
+              ><i class="bx bxs-time bx-xs"></i> Mon - sat: 8:00 - 10:00</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="bx bxs-map bx-xs"></i> Rohni Sector-5 ,New Delhi</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="bx bxs-phone bx-xs"></i> +91-70089-00232</a>
+          </li>
+          <span id="welcomeName">
+            <span>Welcome!</span><span id="welcomeUser"></span>
+    </span>
+        </ul>
+      </div>
+
+      <!-- navbar bottom section -->
+      <div class="navbar-bottom">
+        <div class="brand-left">BANKRUPT BUDDY</div>
+        <div class="nav-links" id="nav-links">
+        <ul class="menu-right options">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#blog">Articles</a></li>
+          <li><a href="#teams">Teams</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html">Logout</a></li>
+        </ul>
+    </div>
+        <a href="#" class="nav-toggle" id="nav-toggle"><i class="fa-solid fa-bars" id="hamburger"></i></a>
+    
+      </div>
+
+      <!-- Showcase content Section -->
+      <div class="showcase-content">
+        <h1>Your Path to Financial Freedom <br /><span>Starts Here</span></h1>
+        <p id="showcase-id">
+          Simplify your finances, optimize investments, and achieve your goals
+          with precision.
+        </p>
+
+        <!-- Explore More Button -->
+        <a href="javascript:void(0)" class="btn btn-left" id="explore-more"
+          >EXPLORE MORE</a
+        >
+
+       
+        <a href="#contact" class="btn btn-right">GET IN TOUCH</a>
+      </div>
+    </div>
+
+    <!-- Services / Goal Section  -->
+
+    <section id="services" class="bg-light py-3">
+      <div class="wrapper">
+        <div class="items">
+          <a href="tipsmodule.html" class="link-text item">
+            <i class="bx bxs-badge-dollar bx-lg"></i>
+            <h3>Financial Tips</h3>
+            <p>
+              Discover actionable financial advices to help you make smarter
+              decisions, reduce debt,and increase savings.
+            </p>
+          </a>
+          <a href="expenseTracker.html" class="link-text item">
+            <i class="bx bxs-building-house bx-lg"></i>
+            <h3>Expense Tracker</h3>
+            <p>
+              Take control of your finances with our easy-to-use expense
+              tracker.
+            </p>
+          </a>
+
+          <a
+            href="todoListnew.html"
+            class="link-text item"
+            style="text-decoration: none"
+          >
+            <i class="bx bxs-plane-alt bx-lg"></i>
+            <h3>To-do List</h3>
+            <p>
+              Stay organized with our customizable to-do list. Plan your tasks,
+              set financial goals, and achieve them with ease.
+            </p>
+          </a>
+        </div>
+        <div id="goal" class="goal">
+          <div class="goal-img">
+            <img src="/images2/priorities2.jpg" />
+          </div>
+          <div class="goal-text">
+            <a href="#">Our Priorities</a>
+            <h2>
+              Driving Financial Growth <br />
+              Through Expertise and Innovation
+            </h2>
+            <div class="contents">
+              <div class="content p-4">
+                <i class="bx bx-check bx-sm"></i>
+              </div>
+              <div class="content p-4">
+                <h3>Investment Management</h3>
+                <p>
+                  We provide data-driven strategies to help you optimize <br />
+                  portfolio performance and achieve long-term profitability.
+                </p>
+              </div>
+            </div>
+            <div class="contents">
+              <div class="content p-4">
+                <i class="bx bx-check bx-sm"></i>
+              </div>
+              <div class="content p-4">
+                <h3>Future-Focused Financial Strategies</h3>
+                <p>
+                  Stay ahead with tailored solutions designed to adapt <br />
+                  to changing markets and secure your financial future.
+                </p>
+              </div>
+            </div>
+            <div class="contents">
+              <div class="content p-4">
+                <i class="bx bx-check bx-sm"></i>
+              </div>
+              <div class="content p-4">
+                <h3>Comprehensive Business Solutions</h3>
+                <p>
+                  From financial planning to growth strategies, we deliver
+                  <br />
+                  actionable insights to drive measurable results.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog py-3">
+      <div class="wrapper">
+        <div class="header">
+          <span></span>
+          <h4>Articles</h4>
+        </div>
+        <div class="blog-info">
+          <h2>Read Our <span class="text-secondary">Latest Articles</span></h2>
+          <button id="viewAllBtn" onclick="toggleView()">View All</button>
+          <!-- <a href="#">view all</a> -->
+        </div>
+        <div class="blog-card">
+          <!-- article1 -->
+          <div class="card blog-card-item">
+            <a
+              href="https://www.investopedia.com/terms/c/cryptocurrency.asp"
+              style="text-decoration: none"
+            >
+              <div class="card-header">
+                <img src="/images2/blog1.jpg" />
+              </div>
+              <div class="card-body">
+                <span class="tag tag-yellow">Finance</span>
+                <h4>
+                  Understanding Cryptocurrency's Role<br />in Modern Finance
+                </h4>
+              </div>
+            </a>
+            <div class="footer footer-content">
+              <small
+                >January 23, 2025 / <span class="like-count">100+</span> Liked
+                👍</small
+              >
+              <button class="like-button">❤️ Like</button>
+              <a href="#"><i class="bx bx-right-arrow-alt bx-sm"></i></a>
+            </div>
+          </div>
+          <!-- article2 -->
+          <div class="card blog-card-item">
+            <a
+              href="https://timesofindia.indiatimes.com/readersblog/brand-maker-rd/importance-of-digital-marketing-in-modern-business-era-51376/"
+              style="text-decoration: none"
+            >
+              <div class="card-header">
+                <img src="/images2/blog2.png" />
+              </div>
+              <div class="card-body">
+                <span class="tag tag-purple">Marketing</span>
+                <h4>
+                  The Power of Digital Marketing in <br />Today's Business World
+                </h4>
+              </div>
+            </a>
+            <div class="footer footer-content">
+              <small
+                >January 20, 2025 / <span class="like-count">200+ </span> Liked
+                👍</small
+              >
+              <button class="like-button">❤️ Like</button>
+              <a href="#"><i class="bx bx-right-arrow-alt bx-sm"></i></a>
+            </div>
+          </div>
+          <!-- article3 -->
+          <div class="card blog-card-item">
+            <a
+              href="https://www.forbes.com/councils/forbesbusinesscouncil/2024/07/03/how-innovation-best-drives-business-growth/"
+              style="text-decoration: none"
+            >
+              <div class="card-header">
+                <img src="/images2/blog3.webp" />
+              </div>
+              <div class="card-body">
+                <span class="tag tag-pink">Business</span>
+                <h4>
+                  The Importance of Innovation in Driving <br />Business Growth
+                </h4>
+              </div>
+            </a>
+            <div class="footer footer-content">
+              <small
+                >January 18, 2025 / <span class="like-count">1500+</span> Liked
+                👍</small
+              >
+              <button class="like-button">❤️ Like</button>
+              <a href="#"><i class="bx bx-right-arrow-alt bx-sm"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="teams" class="teams bg-light py-3">
+      <h3 class="text-center">We are there for you</h3>
+      <h2 class="text-center">
+        Meet Our <span class="text-secondary">Professional Team</span>
+      </h2>
+      <p class="text-center">
+        We help you see the world differently, discover opportunities you may
+        never have <br />
+        imagined and achieve results that bridge what is with what can be
+      </p>
+      <div class="wrapper">
+        <div class="card-items">
+          <!-- Card1 -->
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="card-header">
+                  <img src="/images2/tanyamalhotra.jpg" />
+                </div>
+                <div class="card-body">
+                  <h3>Tanya Malhotra</h3>
+                  <h4>Chief Communication Officer</h4>
+                </div>
+              </div>
+              <div class="card-back">
+                <div class="card-body">
+                  <h3>Achievements</h3>
+                  <ul>
+                    <li>
+                      Implemented a communication strategy that boosted client
+                      retention by 25% in financial year 2023
+                    </li>
+                    <li>
+                      Led the team to win the "Best PR Campaign" award in 2023.
+                    </li>
+                    <li>
+                      Authored a bestselling book on corporate communication
+                      techniques.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card2 -->
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="card-header">
+                  <img src="/images2/rohitsinghania.jpg" />
+                </div>
+                <div class="card-body">
+                  <h3>Rohit Singhania</h3>
+                  <h4>Chief Business Project</h4>
+                </div>
+              </div>
+              <div class="card-back">
+                <div class="card-body">
+                  <h3>Achievements</h3>
+                  <ul>
+                    <li>
+                      Successfully launched over 15 large-scale business
+                      projects globally.
+                    </li>
+                    <li>
+                      Increased company revenue by 40% through innovative
+                      business strategies.
+                    </li>
+                    <li>
+                      Recipient of the "Global Business Leader" award in 2022.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card3 -->
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="card-header">
+                  <img src="/images2/shubhamnegi.jpg" />
+                </div>
+                <div class="card-body">
+                  <h3>Shubham Negi</h3>
+                  <h4>International Consultant</h4>
+                </div>
+              </div>
+              <div class="card-back">
+                <div class="card-body">
+                  <h3>Achievements</h3>
+                  <ul>
+                    <li>
+                      Consulted with Fortune 500 companies to optimize global
+                      operations.
+                    </li>
+                    <li>
+                      Developed a cross-border financial strategy that reduced
+                      costs by 30%.
+                    </li>
+                    <li>
+                      Featured in "Top Consultants of the Year" by a leading
+                      business magazine.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card4 -->
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="card-header">
+                  <img src="/images2/arjunnaik.jpg" />
+                </div>
+                <div class="card-body">
+                  <h3>Arjun Naik</h3>
+                  <h4>Co-Founder of Company</h4>
+                </div>
+              </div>
+              <div class="card-back">
+                <div class="card-body">
+                  <h3>Achievements</h3>
+                  <ul>
+                    <li>
+                      Co-founded the company and scaled it to 10+ countries in 5
+                      years.
+                    </li>
+                    <li>
+                      Instrumental in securing $50M in funding for business
+                      expansion.
+                    </li>
+                    <li>
+                      Awarded "Entrepreneur of the Year" for innovative
+                      leadership.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <h2>What Our Users Are Saying</h2>
+        <div class="owl-carousel owl-theme">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-item">
+            <img
+              src="/images2/user1.jpeg"
+              alt="John Doe"
+              class="testimonial-img"
+            />
+            <p>
+              "This website has been incredibly helpful in managing my finances.
+              The tips are spot on, and the expense tracker is easy to use!"
+            </p>
+            <h4>John Doe</h4>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="testimonial-item">
+            <img
+              src="/images2/user2.jpeg"
+              alt="Jane Smith"
+              class="testimonial-img"
+            />
+            <p>
+              "I love the simplicity of the SIP calculator. It's easy to use and
+              has helped me plan my investment strategy effectively."
+            </p>
+            <h4>Jane Smith</h4>
+            <p class="rating">⭐⭐⭐⭐</p>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="testimonial-item">
+            <img
+              src="/images2/user3.jpg"
+              alt="Mike Johnson"
+              class="testimonial-img"
+            />
+            <p>
+              "A must-use tool for anyone looking to get better control over
+              their finances. The to-do list feature is a game-changer!"
+            </p>
+            <h4>Mike Johnson</h4>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+          </div>
+          <!-- Testimonial 4 -->
+          <div class="testimonial-item">
+            <img
+              src="/images2/user4.jpeg"
+              alt="Emily Clark"
+              class="testimonial-img"
+            />
+            <p>
+              "I've been using this website for a few months now, and it's
+              helped me save more money by tracking my expenses. Highly
+              recommended!"
+            </p>
+            <h4>Emily Clark</h4>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+          </div>
+          <!-- Testimonial 5 -->
+          <div class="testimonial-item">
+            <img
+              src="/images2/user5.jpeg"
+              alt="Snow white"
+              class="testimonial-img"
+            />
+            <p>
+              "I've been using this website for a few months now, and it's
+              helped me save more money by tracking my expenses. Highly
+              recommended!"
+            </p>
+            <h4>Snow White</h4>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+          </div>
+          <!-- Testimonial 6 -->
+          <div class="testimonial-item">
+            <img
+              src="/images2/user6.jpg"
+              alt="White Hat"
+              class="testimonial-img"
+            />
+            <p>
+              "I've been using this website for a few months now, and it's
+              helped me save more money by tracking my expenses. Highly
+              recommended!"
+            </p>
+            <h4>White Hat</h4>
+            <p class="rating">⭐⭐⭐</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+      <div class="contact-wrapper">
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions or need more information, feel free to get
+          in touch with me. I'm here to help!
+        </p>
+        <form action="https://formspree.io/f/xvggdvyq" method="POST">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="6"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-upper">
+        <div class="row">
+          <div class="col col1">
+            <h3 id="moreAbout">More About Us</h3>
+            <p>
+              At <b>BANKRUPT BUDDY</b> ,we believe that managing your finances
+              should be simple, efficient, and empowering. Our platform is
+              designed to help you take charge of your financial journey with
+              tools and resources tailored to your needs
+            </p>
+            <p>
+              <a href="#services" style="color: rgb(25, 181, 243)"
+                >Get Started</a
+              >
+            </p>
+          </div>
+          <div class="col col2">
+            <h3>Office</h3>
+            <p>ITpl Road</p>
+            <p>Rohni Sector-5 110085</p>
+            <p>New Delhi, India</p>
+            <p class="email-id">harsh.shukla2222@gmail.com</p>
+            <h4>+91-84506-13222</h4>
+          </div>
+          <div class="col col3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#blog">Articles</a></li>
+              <li><a href="#teams">Teams</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col col4">
+            <h3>Our Services</h3>
+            <ul>
+              <li><a href="tipsmodule.html">Financial Strategies</a></li>
+              <li><a href="expenseTracker.html">Expense Tracker</a></li>
+              <li><a href="todoListnew.html">To do List</a></li>
+              <li><a href="tipsmodule.html">Sip Calculator</a></li>
+            </ul>
+          </div>
+          <div class="col col5">
+            <h3>Newsletter</h3>
+            <form id="footer-email">
+              <i class="fa-regular fa-envelope"></i>
+              <input type="email" placeholder="Enter your email id" required />
+              <button type="submit">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
+            <div class="social-icons">
+              <i class="fa-brands fa-x-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom py-3 text-center">
+        <p>Copyright &copy; 2024 by Bankrupt Buddy. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="app1.js"></script>
+</div>
+  </body>
+
+</html>

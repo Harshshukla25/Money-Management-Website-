@@ -1,0 +1,232 @@
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d9bdc6;
+  }
+  
+  #homeBtn {
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #711818;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  #homeBtn:hover {
+    background-color: #4b1010;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #0c0c0c;
+    font-size: 50px;
+    margin-top: -30px;
+    font-weight: 800;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .form-group button {
+    background-color: #711818;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .form-group button:hover {
+    background-color: #942c2c;
+  }
+  
+  .filters {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .filters select,
+  .filters input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid #ddd;
+  }
+  
+  th,
+  td {
+    padding: 12px;
+    text-align: center;
+  }
+  
+  th {
+    background: #f8f9fa;
+  }
+
+  .edit-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .delete-button {
+    background-color: rgb(204, 24, 24);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  .edit-button:hover {
+    background-color: #45a049;
+  } 
+  .delete-button:hover {
+    background-color: #e74c3c;
+  }
+  
+
+  
+  .chart-container {
+    margin: 20px auto;
+    display: none;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .calculate-total {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .calculate-total button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .calculate-total button:hover {
+    background: #0056b3;
+  }
+  
+  .calculate-total p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  /* Added styles for Budget Section */
+  #budgetSection {
+    margin-top: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  #budgetInput {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+  
+  #budgetProgressContainer {
+    margin-top: 10px;
+  }
+  
+  #budgetProgressBar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+  }
+  
+  #budgetProgress {
+    height: 20px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+  }
+  
+  #generatePDF{
+    background-color: #309633;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  #generatePDF:hover{
+    background-color: #256627;
+  }
+  
+  /*Responsive Design*/
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+      padding: 10px;
+    }
+  
+    .filters {
+      flex-direction: column;
+    }
+  
+    .filters select,
+    .filters input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    h1 {
+      font-size: 30px;
+    }
+  }
+  

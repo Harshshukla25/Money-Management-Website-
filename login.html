@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #416fb1, #487c9d);
+      color: #fff;
+      overflow: hidden;
+    }
+    .login-container {
+      background: #fff;
+      width: 100%;
+      max-width: 400px;
+      padding: 2.5rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      position: relative;
+    }
+    .login-container h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #1d3557;
+      margin-bottom: 1.5rem;
+    }
+    .input-group {
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+    .input-group label {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+      display: block;
+      font-weight: 600;
+      color: #535b63;
+    }
+    .input-group input {
+      width: 100%;
+      padding: 0.85rem;
+      border: 1px solid #ced4da;
+      border-radius: 8px;
+      font-size: 1rem;
+      background: #f8f9fa;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .input-group input:focus {
+      border-color: #457b9d;
+      box-shadow: 0 0 0 3px rgba(69, 123, 157, 0.2);
+      outline: none;
+    }
+    button {
+      width: 100%;
+      padding: 0.9rem;
+      background: linear-gradient(90deg, #2a5773, #1d3557);
+      border: none;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 15px rgba(56, 113, 148, 0.4);
+    }
+    button:active {
+      transform: scale(0.98);
+    }
+    .login-container a {
+      color: #335f7a;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 1rem;
+      transition: color 0.3s;
+    }
+    .login-container a:hover {
+      color: #1d3557;
+    }
+    .login-container p {
+      margin-top: 1.4rem;
+      font-size: 1rem;
+      color: #404851;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      .login-container {
+        padding: 2rem;
+      }
+      .login-container h2 {
+        font-size: 1.8rem;
+      }
+      .input-group input {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+      }
+      button {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Welcome Back</h2>
+    <form id="loginForm">
+      <div class="input-group">
+        <label for="loginUsername">Username</label>
+        <input type="text" id="loginUsername" name="loginUsername" placeholder="Enter your username" required>
+      </div>
+      <div class="input-group">
+        <label for="loginEmail">Email</label>
+        <input type="email" id="loginEmail" name="loginEmail" placeholder="Enter your email" required>
+      </div>
+      <div class="input-group">
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" name="loginPassword" placeholder="Enter your password" required>
+      </div>
+      <button type="submit">Log In</button>
+      <a class="forget">Forgot Password</a>
+    </form>
+    <p id="loginErrorMessage" style="color: red; display: none;">Invalid Detail please recheck</p>
+    <p id="loginErrorMessageEmail" style="color: red; display: none;">Invalid Email Please Recheck</p>
+    <p id="loginErrorMessagePassword" style="color: red; display: none;">Invalid Password Please Recheck</p>
+    <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    
+  </div>
+  <script src="login.js" ></script>
+</body>
+</html>
+

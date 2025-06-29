@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Expense Tracker</title>
+   <link rel="stylesheet" href="expenseTracker.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+  
+  <a href="index1.html" id="homeBtnLink"><button id="homeBtn">Home</button></a>
+  <h1>Expense Tracker</h1>
+  <div class="container">
+    
+
+    <div class="form-group">
+      <label for="expenseName">Expense Name</label>
+      <input type="text" id="expenseName" placeholder="Enter expense name">
+    </div>
+
+    <div class="form-group">
+      <label for="expenseAmount">Amount</label>
+      <input type="number" id="expenseAmount" placeholder="Enter amount">
+    </div>
+
+    <div class="form-group">
+      <label for="expenseCategory">Category</label>
+      <select id="expenseCategory">
+        <option value="Food">Food</option>
+        <option value="Transport">Transport</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="expenseDate">Date</label>
+      <input type="date" id="expenseDate">
+    </div>
+
+    <div class="form-group">
+      <button id="addExpense">Add Expense</button>
+    </div>
+
+<!-- Budget Section -->
+<div class="form-group">
+  <label for="monthlyBudget">Set Monthly Budget</label>
+  <input type="number" id="monthlyBudget" placeholder="Enter budget">
+  <button id="setBudget">Set Budget</button>
+</div>
+
+<div id="budgetStatus">
+  <p>Please set a budget to track your expenses.</p>
+</div>
+
+<div id="budgetProgressContainer">
+  <p>Budget Progress:</p>
+  <div id="budgetProgressBar" >
+    <div id="budgetProgress" ></div>
+  </div>
+</div>
+
+
+    <div class="filters">
+      <select id="filterCategory">
+        <option value="">All Categories</option>
+        <option value="Food">Food</option>
+        <option value="Transport">Transport</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Other">Other</option>
+      </select>
+      <input type="month" id="filterDate">
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th onclick="sortTable('name')">Name</th>
+          <th onclick="sortTable('amount')">Amount</th>
+          <th>Category</th>
+          <th onclick="sortTable('date')">Date</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="expenseTable"></tbody>
+    </table>
+
+    <div class="calculate-total">
+      <button id="calculateTotal">Calculate Total for Month</button>
+      <p id="totalDisplay">Total: $0.00</p>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="expenseChart"></canvas>
+    </div>
+    <div class="generate-pdf">
+      <button id="generatePDF">Generate PDF for Selected Month</button>
+    </div>
+    
+
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="expenseTracker.js"></script>
+</body>
+</html>
+
